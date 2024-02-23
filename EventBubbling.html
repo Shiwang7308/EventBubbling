@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+             <div style="background-color: blue; width: 400px; height: 400px; display: flex; justify-content: center; align-items: center; " id="grandParent">
+                 <div style="background-color: green; width: 200px; height: 200px; display: flex; justify-content: center; align-items: center;"" id="parent">
+                  <button style="background-color: red; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center;"id="btn">Hello</button>
+                 </div>
+             </div>
+
+        <script>
+          const grandParent = document.getElementById('grandParent');
+          const parent = document.getElementById('parent');
+          const child = document.getElementById('btn');
+
+          grandParent.addEventListener('click',()=>{
+            alert('Grand Parent Clicked');
+          })
+
+          parent.addEventListener('click',()=>{
+            alert('Parent clicked');;
+          })
+
+          child.addEventListener('click',()=>{
+            alert('Child button clicked');
+          })
+        </script>
+</body>
+</html>
